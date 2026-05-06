@@ -1,35 +1,38 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
-const skills = [
-  { name: "TypeScript", icon: "🌐" },
-  { name: "React", icon: "⚛️" },
-  { name: "Node.js", icon: "🟢" },
-  { name: "Express", icon: "🐍" },
-  { name: "PostgreSQL", icon: "🗃️" },
-  { name: "Git", icon: "🔀" },
-];
+import { skillGroups } from "@/data/skills";
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-white dark:bg-slate-800">
-      <div className="container mx-auto px-4">
-        <h2 className="mb-12 text-3xl font-bold text-center text-slate-900 dark:text-white">
-          Skills
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-          {skills.map((skill) => (
-            <Card key={skill.name}>
-              <CardHeader>
-                <CardTitle className="text-center">
-                  <span className="text-4xl">{skill.icon}</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-center text-lg font-semibold">
-                  {skill.name}
-                </p>
-              </CardContent>
-            </Card>
+    <section id="stack" className="py-20 md:py-28 hairline-t">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+        <div className="mb-12">
+          <p className="font-mono text-xs text-[var(--color-fg-muted)]">
+            /stack
+          </p>
+          <h2 className="mt-2 text-2xl text-[var(--color-fg)] md:text-3xl">
+            What I work with.
+          </h2>
+        </div>
+
+        <div className="space-y-8">
+          {skillGroups.map((group) => (
+            <div
+              key={group.label}
+              className="grid gap-4 md:grid-cols-[180px_1fr] md:gap-12"
+            >
+              <p className="font-mono text-xs uppercase tracking-wider text-[var(--color-fg-muted)] md:pt-1.5">
+                {group.label}
+              </p>
+              <ul className="flex flex-wrap gap-2">
+                {group.items.map((item) => (
+                  <li
+                    key={item}
+                    className="font-mono text-xs hairline rounded-sm px-2.5 py-1 text-[var(--color-fg-dim)]"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
         </div>
       </div>

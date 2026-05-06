@@ -1,10 +1,11 @@
 export default function Footer() {
   return (
-    <footer className="py-6 bg-slate-100 dark:bg-slate-800">
-      <div className="container mx-auto px-4 text-center">
-        <p className="text-slate-600 dark:text-slate-300">
-          © {new Date().getFullYear()} Kyle Hurst. All rights reserved.
+    <footer className="hairline-t py-10">
+      <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 font-mono text-xs text-[var(--color-fg-muted)] sm:flex-row sm:items-center sm:justify-between sm:px-8">
+        <p>
+          © {new Date().getFullYear()} kyle hurst · sandy, ut
         </p>
+        <p>built fast · debugged faster · still no light mode</p>
       </div>
     </footer>
   );
