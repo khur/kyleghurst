@@ -3,6 +3,7 @@ import { experience } from "@/data/experience";
 export default function Experience() {
   return (
     <section id="work" className="py-20 md:py-28 hairline-t">
+      <h2 className="sr-only">Experience</h2>
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="mb-12 flex items-baseline justify-between">
           <p className="font-mono text-xs text-[var(--color-fg-muted)]">
