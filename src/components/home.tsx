@@ -7,19 +7,34 @@ import EarlierProjects from "@/components/earlier-projects";
 import Skills from "@/components/skills";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
+import Reveal from "@/components/reveal";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-fg)]">
       <Header />
       <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Products />
-        <EarlierProjects />
-        <Skills />
-        <Contact />
+        <Reveal>
+          <Hero />
+        </Reveal>
+        <Reveal>
+          <About />
+        </Reveal>
+        <Reveal>
+          <Experience />
+        </Reveal>
+        <Reveal>
+          <Products />
+        </Reveal>
+        <Reveal>
+          <EarlierProjects />
+        </Reveal>
+        <Reveal>
+          <Skills />
+        </Reveal>
+        <Reveal>
+          <Contact />
+        </Reveal>
       </main>
       <Footer />
     </div>
