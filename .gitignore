@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# npm not used — pnpm only (pnpm-lock.yaml is committed)
+package-lock.json
+.claude/scheduled_tasks.lock
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
