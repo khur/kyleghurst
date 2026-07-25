@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import About from "@/components/about";
 import Experience from "@/components/experience";
 import Products from "@/components/products";
+import SideProjects from "@/components/side-projects";
 import EarlierProjects from "@/components/earlier-projects";
 import Skills from "@/components/skills";
 import Contact from "@/components/contact";
@@ -25,6 +26,9 @@ export default function Home() {
         </Reveal>
         <Reveal>
           <Products />
+        </Reveal>
+        <Reveal>
+          <SideProjects />
         </Reveal>
         <Reveal>
           <EarlierProjects />
