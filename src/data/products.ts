@@ -55,4 +55,16 @@ export const products: Product[] = [
     metrics: ["migrated vite spa → astro for seo", "reddit + hn trend scraping"],
     tech: ["astro", "cloudflare workers", "postgres"],
   },
+  {
+    name: "Pluvv",
+    url: "https://pluvv.app",
+    tagline:
+      "End-to-end-encrypted, Discord-style messenger — client-side NaCl encryption with a real-time LiveView UI.",
+    metrics: [
+      "e2ee by default",
+      "encrypted file + voice storage",
+      "~$6/month infra",
+    ],
+    tech: ["elixir", "phoenix liveview", "postgres", "fly.io"],
+  },
 ];
