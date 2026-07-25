@@ -9,8 +9,19 @@ export type ExperienceEntry = {
 
 export const experience: ExperienceEntry[] = [
   {
-    start: "2025.07",
+    start: "2026.04",
     end: "present",
+    company: "Pique",
+    role: "Lead AI Engineer",
+    location: "Sandy, UT",
+    bullets: [
+      "Leading AI engineering through MMERCH's pivot to PIQUE — created with renowned vintage fashion collector Colby Mugrabi, PIQUE is the elegant way to index, organize, and manage a collection.",
+      "Carrying the AI-augmented engineering practices established at MMERCH into a product built to stay straightforward and simple, freeing collectors to focus on their passion.",
+    ],
+  },
+  {
+    start: "2025.07",
+    end: "2026.04",
     company: "MMERCH",
     role: "Senior Software Engineer, AI Engineering",
     location: "Sandy, UT",

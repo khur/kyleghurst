@@ -8,9 +8,7 @@ export default function Hero() {
           </p>
 
           <h1 className="text-4xl leading-[1.05] tracking-tight text-[var(--color-fg)] sm:text-5xl md:text-6xl lg:text-7xl">
-            Senior Software Engineer,
-            <br />
-            <span className="text-[var(--color-fg-dim)]">AI Engineering.</span>
+            Lead AI Engineer<span className="text-[var(--color-fg-dim)]">.</span>
           </h1>
 
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-[var(--color-fg-dim)] md:text-xl">

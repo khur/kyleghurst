@@ -1,6 +1,6 @@
 # kyleghurst.com
 
-Personal portfolio site for Kyle Hurst — Senior Software Engineer, AI Engineering.
+Personal portfolio site for Kyle Hurst — Lead AI Engineer.
 
 Live at [kyleghurst.com](https://kyleghurst.com/).
 
