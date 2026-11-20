@@ -57,10 +57,11 @@ export const products: Product[] = [
   },
   {
     name: "Pluvv",
-    url: "https://pluvv.app",
+    url: "",
     tagline:
       "End-to-end-encrypted, Discord-style messenger — client-side NaCl encryption with a real-time LiveView UI.",
     metrics: [
+      "deprecated · built as a demo",
       "e2ee by default",
       "encrypted file + voice storage",
       "~$6/month infra",

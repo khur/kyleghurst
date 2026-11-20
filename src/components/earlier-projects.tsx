@@ -3,6 +3,7 @@ import { earlierProjects } from "@/data/earlier-projects";
 export default function EarlierProjects() {
   return (
     <section className="py-16 md:py-20">
+      <h2 className="sr-only">Earlier work</h2>
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <p className="font-mono text-xs text-[var(--color-fg-muted)] mb-6">
           // earlier work

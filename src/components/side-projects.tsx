@@ -3,6 +3,7 @@ import { sideProjects } from "@/data/side-projects";
 export default function SideProjects() {
   return (
     <section className="py-16 md:py-20 hairline-t">
+      <h2 className="sr-only">Side projects</h2>
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="mb-6 flex items-baseline justify-between">
           <p className="font-mono text-xs text-[var(--color-fg-muted)]">

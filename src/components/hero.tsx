@@ -8,7 +8,7 @@ export default function Hero() {
           </p>
 
           <h1 className="text-4xl leading-[1.05] tracking-tight text-[var(--color-fg)] sm:text-5xl md:text-6xl lg:text-7xl">
-            Lead AI Engineer<span className="text-[var(--color-fg-dim)]">.</span>
+            <span className="sr-only">Kyle Hurst — </span>Lead AI Engineer<span className="text-[var(--color-fg-dim)]">.</span>
           </h1>
 
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-[var(--color-fg-dim)] md:text-xl">
@@ -46,6 +46,9 @@ export default function Hero() {
             <img
               src="/kgh.jpeg"
               alt="Kyle Hurst"
+              width={460}
+              height={460}
+              fetchPriority="high"
               className="h-40 w-40 rounded-sm object-cover hairline md:h-56 md:w-56"
             />
             <div className="absolute -bottom-3 -right-3 hairline bg-[var(--color-bg)] px-2 py-1 font-mono text-[10px] text-[var(--color-fg-muted)]">

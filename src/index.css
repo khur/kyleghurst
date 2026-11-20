@@ -50,7 +50,7 @@
   --color-bg-elevated: #111113;
   --color-fg: #ededed;
   --color-fg-dim: #a3a3a3;
-  --color-fg-muted: #6b6b6b;
+  --color-fg-muted: #858585;
   --color-line: #1f1f22;
   --color-line-strong: #2a2a2e;
   --color-accent: #f59e0b;
@@ -130,8 +130,10 @@
 }
 
 @layer components {
+  /* Gated on .js (set inline in index.html) so the prerendered page
+     stays visible when scripts don't run. */
   @media (prefers-reduced-motion: no-preference) {
-    .reveal {
+    .js .reveal {
       opacity: 0;
       transform: translateY(10px);
       transition:
@@ -139,7 +141,7 @@
         transform 0.5s ease-out;
     }
 
-    .reveal.is-visible {
+    .js .reveal.is-visible {
       opacity: 1;
       transform: none;
     }
